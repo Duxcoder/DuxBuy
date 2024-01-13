@@ -1,27 +1,27 @@
 <script setup lang="ts">
-// import BaseButton from '@/shared/ui/button/BaseButton.vue';
-// import { ref } from 'vue';
+import BaseButton from '@/shared/ui/button/BaseButton.vue';
+import { ref } from 'vue';
 
-// const loading = ref({
-//   default: false,
-//   filled: false,
-//   outlineLight: false,
-//   outlineDark: false
-// });
+const loading = ref({
+  default: false,
+  filled: false,
+  outlineLight: false,
+  outlineDark: false
+});
 
-// function toggleLoading(
-//   type: 'default' | 'filled' | 'outlineLight' | 'outlineDark'
-// ) {
-//   loading.value[type] = !loading.value[type];
-//   setTimeout(() => {
-//     loading.value[type] = !loading.value[type];
-//   }, 3000);
-// }
+function toggleLoading(
+  type: 'default' | 'filled' | 'outlineLight' | 'outlineDark'
+) {
+  loading.value[type] = !loading.value[type];
+  setTimeout(() => {
+    loading.value[type] = !loading.value[type];
+  }, 3000);
+}
 </script>
 
 <template>
   <h1>Test UI page</h1>
-  <!-- <hr />
+  <hr />
   <h2>Buttons:</h2>
   <div class="buttons">
     <BaseButton
@@ -52,7 +52,7 @@
     >
       Outline-dark button
     </BaseButton>
-  </div> -->
+  </div>
 </template>
 
 <style scoped>
