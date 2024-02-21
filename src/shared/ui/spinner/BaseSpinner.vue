@@ -6,7 +6,7 @@ defineProps({
   },
   color: {
     type: String,
-    default: '#ffffff;'
+    default: '#fff'
   }
 });
 </script>
@@ -27,7 +27,7 @@ defineProps({
   min-width: 24px;
   min-height: 24px;
   border: 4px solid;
-  border-color: #fff;
+  border-color: var(--color__white);
   border-bottom-color: #404040;
   border-radius: 50%;
   display: inline-block;
