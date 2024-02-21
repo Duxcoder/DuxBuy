@@ -1,0 +1,8 @@
+:root {
+  --color__white: #fff;
+  --color__dark: #00093C;
+  --color__font: #000;
+
+  --desktop-header-size: 110px;
+  --mobile-header-size: 60px;
+}
