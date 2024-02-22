@@ -1,8 +1,10 @@
 import type { RouteRecordRaw } from 'vue-router';
-import AppHome from '@/pages/AppHome.vue';
+import component from '@/pages/AppHome.vue';
+import { pages } from '@/shared/routing';
 
+const { path, name } = pages.aboutUs;
 export const route: RouteRecordRaw = {
-  path: '/about-us',
-  name: 'about-us',
-  component: AppHome
+  path,
+  name,
+  component
 };
