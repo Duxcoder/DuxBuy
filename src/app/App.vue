@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterView } from 'vue-router';
+import { AppHeader } from '@/widgets/AppHeader';
+import AppToasts from '@/shared/ui/toasts/ui/AppToasts.vue';
 </script>
 
 <template>
-  <header>
-    <nav :style="{ display: 'flex', gap: '1em' }">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/test">Test</RouterLink>
-    </nav>
-  </header>
+  <AppHeader :dark="true" />
   <main>
     <RouterView />
   </main>
   <footer></footer>
+  <AppToasts />
 </template>
 
 <style scoped></style>

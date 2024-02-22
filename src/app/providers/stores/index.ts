@@ -1,12 +1,10 @@
-import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
+import { useResizeObserver } from '@/shared/lib/use';
 
-export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0);
-  const doubleCount = computed(() => count.value * 2);
-  function increment() {
-    count.value++;
-  }
+export const useScreenStore = defineStore('screen', () => {
+  const { screenWidth } = useResizeObserver(document.body);
 
-  return { count, doubleCount, increment };
+  return {
+    screenWidth
+  };
 });

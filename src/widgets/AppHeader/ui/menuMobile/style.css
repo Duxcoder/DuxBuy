@@ -1,0 +1,62 @@
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: var(--mobile-header-size);
+  color: var(--color__dark);
+  width: 100%;
+  padding-top: 30px;
+  background: var(--color__white);
+  z-index: 6;
+}
+
+.nav-list-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item-mobile {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 271%;
+  width: max-content;
+  &:first-child {
+    padding-bottom: 10px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.3em;
+  }
+}
+
+.select-city-style {
+  margin-top: 40px;
+}
+
+.user-panel-style {
+  margin-top: 32px;
+}
+
+.address-style {
+  width: max-content;
+  margin-top: 50px;
+}
+
+.social-style {
+  margin-top: 24px;
+}
+
+.dzen-style {
+  display: flex;
+  width: max-content;
+  margin-top: 24px;
+}
+
+@media (min-width: 900px) {
+  .menu-mobile {
+    top: var(--desktop-header-size);
+  }
+}
